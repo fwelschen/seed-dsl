@@ -6,15 +6,15 @@ repo_name = "jenkins-test-1"
 pipelineJob(project_name) {
     definition {
       cpsScm{
-4	            scm{
-5	                git{
-                    remote{
-                      name(repo_name)
-                      url(repo_url)
-                    }
-                  }
-                  scriptPath("Jenkinsfile")
-6	            }
-7	        }
+        scm{
+          git{
+            remote{
+              name(repo_name)
+              url(repo_url)
+            }
+          }
+          scriptPath("Jenkinsfile")
+         }
+       }
     }
 }
